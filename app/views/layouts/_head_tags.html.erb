@@ -64,13 +64,3 @@
   src: url(/fonts/geist-mono-600.ttf) format('truetype');
 }
 </style>
-<%= javascript_tag nonce: true do %>
-  (function () {
-    var mq = window.matchMedia('(prefers-color-scheme: dark)');
-    var apply = function () { document.documentElement.setAttribute('data-theme', mq.matches ? 'docuseal-dark' : 'docuseal'); };
-    apply();
-    if (mq.addEventListener) mq.addEventListener('change', apply);
-    document.addEventListener('turbo:render', apply);
-    document.addEventListener('turbo:load', apply);
-  })();
-<% end %>

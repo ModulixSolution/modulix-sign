@@ -39,31 +39,6 @@ module.exports = {
           '--tab-border': '1px',
           '--tab-radius': '4px'
         }
-      },
-      {
-        'docuseal-dark': {
-          'color-scheme': 'dark',
-          'primary': '#ffffff',
-          'primary-content': '#000000',
-          'secondary': '#a3a3a3',
-          'secondary-content': '#000000',
-          'accent': '#ffffff',
-          'accent-content': '#000000',
-          'neutral': '#ffffff',
-          'neutral-content': '#000000',
-          'base-100': '#000000',
-          'base-200': '#141414',
-          'base-300': '#1f1f1f',
-          'base-content': '#ffffff',
-          'info': '#6aa8ff',
-          'success': '#3ccf91',
-          'warning': '#f5b544',
-          'error': '#ff6b5e',
-          '--rounded-btn': '8px',
-          '--rounded-box': '8px',
-          '--tab-border': '1px',
-          '--tab-radius': '4px'
-        }
       }
     ]
   }
