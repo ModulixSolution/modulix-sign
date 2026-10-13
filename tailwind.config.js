@@ -10,14 +10,15 @@ module.exports = {
       {
         docuseal: {
           'color-scheme': 'light',
-          primary: '#e4e0e1',
-          secondary: '#ef9fbc',
-          accent: '#eeaf3a',
-          neutral: '#291334',
-          'base-100': '#faf7f5',
-          'base-200': '#efeae6',
-          'base-300': '#e7e2df',
-          'base-content': '#291334',
+          primary: '#2a5bff',
+          'primary-content': '#ffffff',
+          secondary: '#a855f7',
+          accent: '#00d4ff',
+          neutral: '#0a0b18',
+          'base-100': '#f7f8fc',
+          'base-200': '#eceffa',
+          'base-300': '#dfe4f5',
+          'base-content': '#0a0b18',
           '--rounded-btn': '1.9rem',
           '--tab-border': '2px',
           '--tab-radius': '.5rem'

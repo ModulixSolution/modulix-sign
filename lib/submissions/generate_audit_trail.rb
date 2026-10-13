@@ -44,7 +44,7 @@ module Submissions
 
         io = StringIO.new
 
-        document.trailer.info[:Creator] = "#{Docuseal.product_name} (#{Docuseal::PRODUCT_URL})"
+        document.trailer.info[:Creator] = "#{Docuseal.product_name} (https://sign.modulix.gg), based on DocuSeal (AGPL-3.0)"
 
         if pkcs
           sign_params = {
@@ -539,7 +539,7 @@ module Submissions
     end
 
     def sign_reason
-      'Signed with DocuSeal.com'
+      'Signed with Modulix Sign (sign.modulix.gg)'
     end
 
     def select_attachments(submitter)
@@ -561,11 +561,11 @@ module Submissions
     def add_logo(column, _submission = nil)
       column.image(PdfIcons.logo_io, width: 40, height: 40, position: :float)
 
-      column.formatted_text([{ text: 'DocuSeal',
+      column.formatted_text([{ text: Docuseal.product_name,
                                link: Docuseal::PRODUCT_EMAIL_URL }],
                             font_size: 20,
                             font: [FONT_NAME, { variant: :bold }],
-                            width: 100,
+                            width: 200,
                             padding: [5, 0, 0, 8],
                             position: :float, text_align: :left)
     end
