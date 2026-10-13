@@ -6,3 +6,15 @@
   <meta name="turbo-cache-control" content="no-preview">
   <%= render 'layouts/native_styles' %>
 <% end %>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap">
+<script>
+  (function () {
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
+    var apply = function () { document.documentElement.setAttribute('data-theme', mq.matches ? 'docuseal-dark' : 'docuseal'); };
+    apply();
+    if (mq.addEventListener) mq.addEventListener('change', apply);
+    document.addEventListener('turbo:render', apply);
+  })();
+</script>

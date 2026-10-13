@@ -234,3 +234,12 @@ native-action {
     @apply btn-sm w-full;
   }
 }
+
+/* Modulix Sign: dark-mode fallbacks for hard-coded light utilities */
+[data-theme='docuseal-dark'] {
+  .bg-white { background-color: #0a0a0a; }
+  .text-black { color: #ffffff; }
+  .text-gray-500, .text-gray-600, .text-gray-700 { color: #a3a3a3; }
+  .border-gray-200, .border-gray-300 { border-color: #262626; }
+  .bg-gray-50, .bg-gray-100 { background-color: #141414; }
+}
