@@ -1,8 +1,66 @@
 <title>
-  <%= turbo_native_app? ? content_for(:native_title) : (content_for(:html_title) || (signed_in? ? 'DocuSeal' : 'DocuSeal | Open Source Document Signing')) %>
+  <%= turbo_native_app? ? content_for(:native_title) : (content_for(:html_title) || (signed_in? ? 'Modulix Sign' : 'Modulix Sign | Document Signing')) %>
 </title>
 <%= render 'shared/meta' %>
 <% if turbo_native_app? %>
   <meta name="turbo-cache-control" content="no-preview">
   <%= render 'layouts/native_styles' %>
 <% end %>
+<style>
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/geist-300.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/geist-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/geist-500.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/geist-600.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/geist-700.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/geist-mono-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/geist-mono-500.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/geist-mono-600.ttf) format('truetype');
+}
+</style>

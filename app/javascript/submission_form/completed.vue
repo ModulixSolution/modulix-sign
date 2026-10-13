@@ -98,14 +98,21 @@
     </div>
     <div
       v-if="attribution"
-      class="text-center mt-4"
+      class="text-center mt-4 text-xs text-gray-400"
     >
-      {{ t('powered_by') }}
-      <a
-        href="https://www.docuseal.com/start"
+      Powered by <a
+        href="https://www.docuseal.com"
         target="_blank"
         class="underline"
-      >DocuSeal</a> - {{ t('open_source_documents_software') }}
+      >DocuSeal</a> · <a
+        href="https://www.gnu.org/licenses/agpl-3.0.html"
+        target="_blank"
+        class="underline"
+      >AGPL</a> · <a
+        href="https://github.com/ModulixSolution/modulix-sign"
+        target="_blank"
+        class="underline"
+      >Source</a>
     </div>
   </div>
 </template>
