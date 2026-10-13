@@ -21,7 +21,7 @@
             <% if @template.archived_at? %>
               <p dir="auto" class="text-sm"><%= t('form_has_been_deleted_by_html', name: @template.account.name) %></p>
             <% else %>
-              <p dir="auto" class="text-sm"><%= t('invited_by_html', name: @template.account.name) %></p>
+              <p dir="auto" class="text-sm"><%= t('invited_by_html', name: @template.author&.full_name.presence || @template.account.name) %></p>
             <% end %>
           </div>
         </div>
